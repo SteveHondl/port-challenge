@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+padding: 1.5rem;
+font-family: sans-serif, 'Courier New', Courier, monospace;
+background-color: #374247;
+color: #ffffff;
+}
+
+header h2 {
+    display: inline-block;
+    font-size: 50px;
+    margin-left: 4rem;
+}
+
+header nav {
+    padding-top: 1.4rem;
+    margin-right: 3rem;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-flex;
+    margin-right: 1.5rem;
+    text-decoration-line: underline;
+}
+
+a {
+    color: aqua;
+}
+
+.bgraphic {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url("./image-folder/trek-madone-yon.jpg");
+    background-size: cover;
+    background-position: center;
+}
