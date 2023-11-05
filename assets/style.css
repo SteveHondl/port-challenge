@@ -19,7 +19,6 @@ body {
 h1.steve-hondl {
     background-color:aqua;
     width: 265px;
-    float: left; 
 }
 
 h1{
@@ -53,13 +52,104 @@ a {
     color: aqua;
 }
 
+.float-right {
+    float: right;
+    margin-left: 25px
+}
+
 .bgraphic {
-    height: 215px;
+    height: 250px;
     width: 100%;
     margin-bottom: 10px;
     background-image: url("./image-folder/02-hero-bg.jpg");
     background-size: cover;
     background-position: center;
-    content:"testing writing on the picture";
-    content-visibility: visible;
+    flex-wrap: wrap;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0 7% 0 7%;
+}
+
+.article-header{
+    width: 30%;
+    display: flex;
+    float: right;
+    text-align: right;
+    border-right: solid 2px;
+    border-color: blue;
+
+}
+ .graphics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+.graphics .big-card {
+    flex: 4 4 400px;
+    padding: 5px;
+    border-style: solid; 
+    border-color: blue;
+    border-width: 2px;
+}
+
+.graphics .card {
+    flex: 1 1 400px;
+    padding: 5px;
+    text-align: center;
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px; 
+}
+
+.card img{
+    max-width: 100%;
+}
+
+.big-card img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 768px) {
+
+h1.steve-hondl{
+    width: 768px;
+    text-align: center;
+}
+h1 {
+    margin:0;
+}
+
+header nav {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    padding: 0;
+   
+}
+
+header nav ul {
+    padding-inline-start: 0;
+}
+
+header nav ul li{
+    width:auto;
+    float: left;
+}
+
+.article-header {
+    width: 100%;
+}
+.wrap-main {
+    flex-wrap: wrap;
+}
 }
