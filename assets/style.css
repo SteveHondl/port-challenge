@@ -48,13 +48,24 @@ header nav li {
     font-size: 16px;
     padding-right: 30px;
 }
+#subtitle {
+    background-color: #1ed2d5;
+    display: inline;
+    align-self: flex-end;
+    margin: 0 25px 25px 0;
+    padding: 3px;
+    
 
+    
+}
 li a {
     color: var(--c-light);
     font-size: 30px;
 
 }
-
+.article-content img:hover {
+    border: 10px solid black;
+}
 li {
     &:hover {
         color: var(--c-light);
@@ -75,12 +86,8 @@ p {
     font-size: 24px;
 }
 
-.float-right {
-    float: right;
-    margin-left: 25px 
-} 
-
 .bgraphic {
+    display: flex;
     height: 250px;
     width: 100%;
     margin-bottom: 10px;
@@ -88,6 +95,7 @@ p {
     background-size: cover;
     background-position: center;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 main{
@@ -171,7 +179,7 @@ main{
 
 .footer-wrap {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0px;
     color: var(--c-dark);
