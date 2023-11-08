@@ -54,23 +54,20 @@ header nav li {
     align-self: flex-end;
     margin: 0 25px 25px 0;
     padding: 3px;
-    
-
-    
 }
+
+#surf-subtitle {
+    background-color: #1ed2d5;
+    display: inline;
+    align-self: flex-start;
+    margin: 0 0 0 0;
+    padding: 3px
+}
+
+
 li a {
     color: var(--c-light);
-    font-size: 30px;
-
-}
-.article-content img:hover {
-    border: 10px solid black;
-}
-li {
-    &:hover {
-        color: var(--c-light);
-        background-color:var(--c-dark);
-    }
+    font-size: 22px;
 }
 
 header nav li a {
@@ -152,7 +149,6 @@ main{
     border-style: solid;
     border-color:#1ed2d5;
     border-width: 6px;
-    background-blend-mode: color-burn;
 }
 /* .big-card {
     flex: 1 1 auto;
@@ -289,6 +285,15 @@ header nav ul li{
     margin: 20px 0 20px 0;
 }
 
+.fb-container > a > figure > img{
+    width: 550px;
+    height: 200px;
+}
+
+.fb-container > a > article > img{
+    width: 265px;
+    height: 100px;
+}
 .wrap-main {
     flex-wrap: wrap;
 }
@@ -303,6 +308,11 @@ h2 {
     text-align: left;
 }
 
+.footer-wrap{
+    display: inline;
+    justify-content: space-between;
+}
+
 footer nav {
     width: 100%;
     display:flex;
@@ -310,9 +320,9 @@ footer nav {
     padding: 0;
    
 }
-
-footer nav ul {
-    padding-inline-start: 0;
+.footer-wrap nav ul {
+    display: inline;
+    flex-direction: row;
 }
 
 footer nav ul li{
@@ -323,10 +333,62 @@ footer nav ul li{
 footer nav li {
     list-style-type: none;
     text-decoration: underline;
-    float: left;
-    margin:0 30px 0 10px;
-    font-size: 16px;
-    padding-right: 35px;
 }
 
+}
+
+@media screen and (max-width: 320px) {
+
+header nav ul li {
+    padding: 5px 30px 0 20px;
+}
+
+h1.steve-hondl {
+    width: 320px;
+}
+
+header nav li {
+    list-style-type: none;
+     text-decoration: underline;
+     padding-right: 15px;
+        }
+h2 {
+    color:var(--c-dark);
+    font-size: 30px;
+    margin: 5px 0 5px 0;
+          }
+
+.article-content {
+    margin: 0
+}
+
+.fb-container > a > figure > img{
+    width: 280px;
+    height: 100px;
+}
+
+.fb-container > a > article > img{
+    width: 280px;
+    height: 100px;
+}
+
+.big-card {
+    border-style: solid;
+    border-color:aqua;
+    border-width: 6px;
+}
+
+.small-cards {
+    margin: 10px 10px 0 0;
+    border-style: solid;
+    border-color:#1ed2d5;
+    border-width: 6px;
+}
+.footer-wrap nav ul {
+    display: flex;
+    flex-direction: column;
+}
+li a {
+    font-size: 14px;
+}
 }
