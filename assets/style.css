@@ -58,10 +58,10 @@ header nav li {
 
 #surf-subtitle {
     background-color: #1ed2d5;
-    display: inline;
     align-self: flex-start;
     margin: 0 0 0 0;
-    padding: 3px
+    padding: 3px;
+    display: inline;
 }
 
 
@@ -124,16 +124,16 @@ main{
     flex-wrap: wrap;
     flex: 1 1 auto;
     justify-content: center;
-
-
 }
 
-.fb-container > a > figure > img{
+
+
+.fb-container > a > figure {
     width: 800px;
     height: 300px;
 }
 
-.fb-container > a > article > img{
+.fb-container > a > article img{
     width: 380px;
     height: 125px;
 }
@@ -142,14 +142,74 @@ main{
     border-style: solid;
     border-color:aqua;
     border-width: 6px;
+    background-image: url("./image-folder/02-portfolio-4.jpg");
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 800px;
+    height: 300px;
 }
 
-.small-cards {
+#small-card-1 { 
     margin: 10px 10px 0 0;
     border-style: solid;
     border-color:#1ed2d5;
     border-width: 6px;
+    background-image: url("./image-folder/02-portfolio-1.jpg");
+    display: flex;
+    background-size: cover;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 390px;
+    height: 125px;
 }
+
+#small-card-2 { 
+    margin: 10px 10px 0 0;
+    border-style: solid;
+    border-color:#1ed2d5;
+    border-width: 6px;
+    background-image: url("./image-folder/02-portfolio-2.jpg");
+    display: flex;
+    background-size: cover;
+    background-position: cover;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 390px;
+    height: 125px;
+}
+
+#small-card-3 { 
+    margin: 10px 10px 0 0;
+    border-style: solid;
+    border-color:#1ed2d5;
+    border-width: 6px;
+    background-image: url("./image-folder/02-portfolio-3.jpg");
+    display: flex;
+    background-size: cover;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 390px;
+    height: 125px;
+}
+
+#small-card-4 { 
+    margin: 10px 10px 0 0;
+    border-style: solid;
+    border-color:#1ed2d5;
+    border-width: 6px;
+    background-image: url("./image-folder/02-run-buddy.jpg");
+    display: flex;
+    background-size: cover;
+    background-position: cover;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 390px;
+    height: 125px;
+}
+
+
 /* .big-card {
     flex: 1 1 auto;
     padding: 5px;
