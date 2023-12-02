@@ -7,595 +7,96 @@
     font-family: 'Average Sans', sans-serif; 
 }
 
+body,
+h1, h2, h3, p,
+ul, li,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color:#e5eff7;
+    background-color: #e5eff7;
 }
-/* header styling */
+
 .header-wrap {
+    background: rgb(41, 41, 53);
+    color: #37375b;
+    padding: 10px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px;
-    background:rgb(41, 41, 53);
-    color:var(--c-dark);
-}
-
-h1.steve-hondl {
-    background-color:var(--c-light);
-    width: 265px;
-}
-
-h1{
-    color:var(--c-dark);
-    font-size: 40px;
-    margin: 5px 0 5px 0;
-    padding: 0 15px 0 0;
-    text-align: right;
-    text-indent: 15px;
-}
-
-header nav {
-    float: right;
-    padding: 0 75px 0 0;
-    background-color: var(--c-dark);
-}
-
-header nav li {
-    list-style-type: none;
-    text-decoration: underline;
-    float: left;
-    margin:0 -30px 0 10px;
-    font-size: 16px;
-    padding-right: 30px;
-}
-#subtitle {
-    background-color: #1ed2d5;
-    display: inline;
-    align-self: flex-end;
-    margin: 0 25px 25px 0;
-    padding: 3px;
-}
-
-#surf-subtitle {
-    background-color: #1ed2d5;
-    align-self: flex-start;
-    margin: 0 0 0 0;
-    padding: 3px;
-    display: inline;
-}
-
-
-li a {
-    color: var(--c-light);
-    font-size: 22px;
-}
-
-header nav li a {
-    text-decoration: underline;
-}
-
-a {
-    color:var(--c-dark);
-}
-
-p {
-    color: var(--c-dark);
-    font-size: 24px;
-}
-
-.bgraphic {
-    display: flex;
-    height: 250px;
-    width: 100%;
-    margin-bottom: 10px;
-    background-image: url("./image-folder/02-hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-/* beginning of main styling */
-main{
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-.wrap-main{
+.steve-hondl {
+    font-size: 30px;
+    color:#37375b;
+    background-color: #1ed2d5;
+    padding-right: 10%;
+}
+
+nav ul {
+    list-style-type: none;
     display: flex;
-    flex-direction: column;
-    padding: 0px;
-    margin: 0 7% 0 7%;
 }
 
-
-
-.article-header{
-    flex: 1 1 auto;
-    margin-left: 9%;
+nav a {
+    text-decoration: none;
+    color:#1ed2d5;
+    margin: 0 10px;
+    font-size: 1rem;
 }
 
-.article-content{
-    flex: 1 1 auto;
-    margin-left: 10%;
-}
-/* flex-box styling */
-.fb-container {
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    justify-content: center;
-}
-
-.big-card {
-    border-style: solid;
-    border-color:aqua;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-4.jpg");
+.bgraphic {
+    background-image: url("./image-folder/02-hero-bg.jpg");
     background-size: cover;
     background-position: center;
-    width: 80%;
-    height: 300px;
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-.small-cards-container {
+.wrap-main {
+    padding: 20px;
+}
+
+.article-header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.article-content {
+    font-size: 1rem;
+}
+
+.fb-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
 }
 
-#small-card-1 { 
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-1.jpg");
-    display: flex;
-    background-size: cover;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 390px;
-    height: 125px;
-}
-
-#small-card-2 { 
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-2.jpg");
-    display: flex;
-    background-size: cover;
-    background-position: cover;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 390px;
-    height: 125px;
-}
-
-#small-card-3 { 
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-3.jpg");
-    display: flex;
-    background-size: cover;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 390px;
-    height: 125px;
-}
-
-#small-card-4 { 
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-run-buddy.jpg");
-    display: flex;
-    background-size: cover;
-    background-position: cover;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 390px;
-    height: 125px;
-}
-
-.small-cards{
+.big-card, .small-cards {
     border-style: solid;
     border-color: #1ed2d5;
     border-width: 6px;
     background-size: cover;
-    width: 40%; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
-    margin-bottom: 20px; /* Adjust the margin as needed */
+    margin: 10px;
+}
+
+/* Tablet View */
+@media screen and (min-width: 360px) {
+     
 
 }
 
-.footer-wrap {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 0px;
-    color: var(--c-dark);
-}
-/* footer styling */
-h2.contact-me{
-    width: 265px;
-}
-
-h2{
-    color:var(--c-dark);
-    font-size: 60px;
-    margin: 5px 0 5px 0;
-    padding: 0 15px 0 0;
-    text-align: right;
-    text-indent: 15px;
-
-}
-
-.wrap-footer{
-    display: flex;
-    justify-content:space-between;
-    padding: 0 0 0 0;
-    margin: 0 7% 0 7%
-}
-
-footer nav {
-    float: right;
-    padding:0 75px 0 0;
-}
-
-footer nav li {
-    list-style-type: none;
-    text-decoration: underline;
-    float: left;
-    margin:0 -30px 0 10px;
-    font-size: 16px;
-    padding-right: 30px;
-}
-
-footer li a{
-    color: var(--c-dark);
-}
-
-
-footer nav li a {
-    text-decoration: underline;
-}
- 
-footer {
-    margin-top: 5%;
-}
-
-
+/* Medium Desktop View */
 @media screen and (min-width: 768px) {
-    .wrap-main {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-    }
-  
-    .article-header {
-      flex: 1 1 auto;
-      width: 15%;
-    }
-  
-    .article-content,
-    .small-cards-container,
-    footer {
-      flex: 1 1 auto;
-      width: 80%;
-      margin-right: 5%;
-    }
-  
-    .big-card {
-      width: 100%; 
-      height: 300px; 
-    }
-
-
-  .small-cards-container {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  #small-card-1,
-  #small-card-2,
-  #small-card-3,
-  #small-card-4 {
-    width: 48%; /* Adjust the width as needed for a 2x2 grid */
-  }
-}
-
-@media screen and (max-width: 320px) {
-  #small-card-1,
-  #small-card-2,
-  #small-card-3,
-  #small-card-4 {
-    width: 100%; /* Full width for a single column on smaller screens */
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-
-h1.steve-hondl{
-    width: 100%;
-    text-align: center;
-}
-
-h1 {
-    margin:0;
-}
-
-header nav {
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    padding: 0;
-   
-}
-
-header nav ul {
-    padding-inline-start: 0;
-}
-
-header nav ul li{
-    width:auto;
-    float: left;
-}
-
-.article-header {
-    width: 100%;
-    text-align: center;
-}
-
-.article-content {
-    margin: 20px 0 20px 0;
-}
-
-.fb-container {
-    flex-direction: row;
-}
-
-.big-card {
-    border-style: solid;
-    border-color:aqua;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-4.jpg");
-    background-size: cover;
-    background-position: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 300px;
-    margin: 0 auto
-}
-
-#small-card-1 { 
-    margin: 10px 10px 0 0;
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-1.jpg");
-    display: flex;
-    background-size: cover;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 48%;
-    height: 125px;
-    margin: 1% 1%;
-}
-
-#small-card-2 { 
-    margin: 10px 10px 0 0;
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-2.jpg");
-    display: flex;
-    background-size: cover;
-    background-position: cover;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 48%;
-    height: 125px;
-    margin: 1% 1%;
-}
-
-#small-card-3 { 
-    margin: 10px 10px 0 0;
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-3.jpg");
-    display: flex;
-    background-size: cover;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 48%;
-    height: 125px;
-    margin: 1% 1%;
-}
-
-#small-card-4 { 
-    margin: 10px 10px 0 0;
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-run-buddy.jpg");
-    display: flex;
-    background-size: cover;
-    background-position: cover;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 48%;
-    height: 125px;
-    margin: 1% 1%;
-}
-
-.small-cards {
-    width: 48%;
-    height: 125px;
-    margin: 10px 0;
-}
-
-.wrap-main {
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-}
-
-h2.contact-me{
-    width: 100%;
-    text-align: center;
-}
-
-h2 {
-    margin:0;
-    text-align: left;
-}
-
-.footer-wrap{
-    display: inline;
-    justify-content: space-between;
-}
-
-footer nav {
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    padding: 0;
-   
-}
-.footer-wrap nav ul {
-    display: inline;
-    flex-direction: row;
-}
-
-footer nav ul li{
-    width:auto;
-    float: left;
-}
-
-footer nav li {
-    list-style-type: none;
-    text-decoration: underline;
-}
 
 }
 
-@media screen and (max-width: 320px) {
+/* Large Desktop View */
+@media screen and (min-width: 1440px) {
 
-header nav ul li {
-    padding: 5px 30px 0 20px;
-}
-
-h1.steve-hondl {
-    width: 100%;
-}
-
-header nav li {
-    list-style-type: none;
-     text-decoration: underline;
-     padding-right: 15px;
-        }
-h2 {
-    color:var(--c-dark);
-    font-size: 30px;
-    margin: 5px 0 5px 0;
-          }
-
-.article-content {
-    margin: 0
-}
-
-.fb-container {
-    display:block;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    justify-content: center;
-}
-
-
-.big-card {
-    border-style: solid;
-    border-color:aqua;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-4.jpg");
-    background-size: cover;
-    background-position: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
-    height: 125px;
-    margin: 0 auto;
-}
-
-#small-card-1 { 
-    margin: 10px 10px 0 0;
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-1.jpg");
-    display: flex;
-    background-size: cover;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
-    height: 125px;
-    margin: 0 auto;
-}
-
-#small-card-2 { 
-    margin: 10px 10px 0 0;
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-2.jpg");
-    display: flex;
-    background-size: cover;
-    background-position: cover;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 100%;
-    height: 125px;
-    margin: 0 auto;
-}
-
-#small-card-3 { 
-    margin: 10px 10px 0 0;
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-portfolio-3.jpg");
-    display: flex;
-    background-size: cover;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 100%;
-    height: 125px;
-    margin: 0 auto
-}
-
-#small-card-4 { 
-    margin: 10px 10px 0 0;
-    border-style: solid;
-    border-color:#1ed2d5;
-    border-width: 6px;
-    background-image: url("./image-folder/02-run-buddy.jpg");
-    display: flex;
-    background-size: cover;
-    background-position: cover;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 100%;
-    height: 125px;
-    margin: 0 auto;
-}
-
-.footer-wrap nav ul {
-    display: flex;
-    flex-direction: column;
-}
-li a {
-    font-size: 14px;
-}
+        
 }
