@@ -53,12 +53,13 @@ nav a {
 }
 
 .wrap-main {
-    padding: 20px;
+    padding: 5%;
 }
 
 .article-header {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 2%;
+    text-align: center;
 }
 
 .article-content {
@@ -110,6 +111,7 @@ nav a {
     header nav ul {
         display: flex;
         justify-content: center;
+        flex-direction: row;
     }
 
     header nav li {
@@ -164,6 +166,29 @@ nav a {
     header nav ul{
         justify-content: right;
         margin-right: 10%;
+        width: 100%; 
+    }
+
+    header nav {
+        display: flex;
+    } 
+
+    header nav li {
+        margin: 0 10px;
+    }
+
+    .wrap-main {
+        display: flex;
+    }
+
+    .article-header  {
+        width: 15%;
+        text-align: right;
+    }
+
+    .article-content {
+        width: 85%;
+        padding-left: 5%;
     }
         
 }
