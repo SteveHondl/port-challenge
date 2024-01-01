@@ -68,8 +68,6 @@ nav a {
 }
 
 .fb-container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -81,29 +79,27 @@ nav a {
     margin: 10px;
 }
 .big-card {
-    background-image: url("./image-folder/02-portfolio-4.jpg");
-    background-size: cover;
+    background-image: url("./image-folder/Food\ and\ Recipe.png");
+    background-size: 100%;
     background-position: center;
-    width: 100%;
     display: flex;
-    align-items: flex-end;
     justify-content: center;
 }
 
 #small-card1 {
-    background-image: url("./image-folder/02-portfolio-1.jpg");
+    background-image: url("./image-folder/pass-gen\ ss.png");
 }
 
 #small-card2 {
-    background-image: url("./image-folder/02-portfolio-2.jpg");
+    background-image: url("./image-folder/Screenshot\ 2023-11-26\ 094554.png");
 }
 
 #small-card3 {
-    background-image: url("./image-folder/02-portfolio-3.jpg");
+    background-image: url("./image-folder/Screenshot\ 2023-12-03\ 201206.png");
 }
 
 #small-card4 {
-    background-image: url("./image-folder/02-run-buddy.jpg");
+    background-image: url("./image-folder/Screenshot\ 2023-12-10\ 164228.png");
 }
 
 @media screen and (max-width: 320px){
@@ -146,8 +142,6 @@ nav a {
         padding: 10px 0;
         text-align: center;
     }
-     
-
 }
 
 /* Medium Desktop View */
@@ -164,7 +158,7 @@ nav a {
 
     header nav {
         text-align: right; 
-        width: auto; /
+        width: auto; 
     }
 
     header nav ul {
@@ -203,10 +197,9 @@ nav a {
     header nav li {
         margin: 0 10px;
     }
-
     .wrap-main {
+        padding: 2%;
         display: flex;
-        width: 100%;
     }
 
     .article-header  {
@@ -215,34 +208,58 @@ nav a {
     }
 
     .article-content {
-        display: flex;
         width: 85%;
         padding-left: 5%;
     }
 
-    .fb-container {
-        display: flex;
+    #work, #footer {
+        padding-left: 5%;
+    }
+
+    #footer {
         width: 100%;
+    }
+
+    #footer ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        margin-bottom: 2%;
+    }
+    
+    nav li {
+        margin: 0 10px;
+    }
+
+    #work-section-main .work-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .big-card {
+        width: 600px;
+        height: 250px;
+    }
+    
+    .small-container {
+        width: 100%; /* Adjust the width of the small containers */
+        margin: 1px;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
-
-    .fb-container a {
-        display: flex; 
-        flex-wrap: wrap;
-        justify-content: space-between;
-        flex: 1 1 100%;
-        height: 400px;
+    #small-card1, #small-card2, #small-card3, #small-card4 {
+        width: 290px;
+        height: 125px;
+        display: flex;
     }
+    .small-container a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+    }
+}
 
-    
-    .fb-container a .small-cards {
-    background-size: cover;
-    background-position: center;
-    height: 150px; /* Adjust the height as needed */
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 45%;
-}
-    
-}
