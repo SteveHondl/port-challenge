@@ -84,6 +84,7 @@ nav a {
     background-position: center;
     display: flex;
     justify-content: center;
+    background-size: cover;
 }
 
 #small-card1 {
@@ -141,6 +142,79 @@ nav a {
         margin: 0; 
         padding: 10px 0;
         text-align: center;
+    }
+
+    .wrap-main {
+        padding: 2%;
+        display: flex;
+    }
+
+    .article-header  {
+        width: 15%;
+        text-align: right;
+    }
+
+    .article-content {
+        width: 85%;
+        padding-left: 5%;
+    }
+
+    #work, #footer {
+        padding-left: 20%;
+        padding-right: 5%;
+    }
+
+    #footer {
+        width: 100%;
+    }
+
+    #footer ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        margin-bottom: 2%;
+    }
+    
+    nav li {
+        margin: 0 10px;
+    }
+
+    #work-section-main .work-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .fb-container {
+        width: 100%;
+        justify-content: center;
+    }
+    .big-card {
+        display: flex;
+        max-width: none;
+        height: 250px;
+    }
+    
+    .small-container {
+        width: 100%;
+        margin: 1px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #small-card1, #small-card2, #small-card3, #small-card4 {
+        width: 100%;
+        margin: 1%;
+        height: 125px;
+        display: flex;
+    }
+    .small-container a {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
     }
 }
 
@@ -213,7 +287,8 @@ nav a {
     }
 
     #work, #footer {
-        padding-left: 5%;
+        padding-left: 20%;
+        padding-right: 5%;
     }
 
     #footer {
@@ -236,25 +311,32 @@ nav a {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    
+    .fb-container {
+        width: 100%;
+        justify-content: center;
+    }
     .big-card {
-        width: 600px;
+        display: flex;
+        max-width: none;
         height: 250px;
     }
     
     .small-container {
-        width: 100%; /* Adjust the width of the small containers */
+        width: 100%;
         margin: 1px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     #small-card1, #small-card2, #small-card3, #small-card4 {
-        width: 290px;
+        width: 100%;
+        margin: 1%;
         height: 125px;
         display: flex;
     }
     .small-container a {
+        width: 50%;
         display: flex;
         flex-direction: row;
         align-items: center;
